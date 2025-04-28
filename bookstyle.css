@@ -1,0 +1,106 @@
+body  {
+    margin: auto;
+	padding: -1px;
+	color: #A89A65;
+    background-color; #000000;
+
+  }	
+ 
+ 
+ 
+ .wrapper {
+    display: grid;
+	grid-template-columns: 1fr 4fr 0.8fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+	    "logo banner banner"
+		"nav main side"
+		"nav main side"
+		"footer footer footer"; 
+	grid-gap: 4px;
+	background-color: #000000;
+	background-image: url('nav.png');
+ }
+ 
+ 
+ 
+ 
+ 
+ .box {
+	 border: solid 0.1px #B3001E;
+	 border-radius: 4px;
+	 padding: 20px;
+     background-color: #000000;	 
+ }
+ 
+ .logo, .banner, .side, .footer {
+	 color: #000000;
+ }
+ 
+ 
+ 
+ .logo {
+	 background-color: transparent; 
+	 grid-area: logo;
+ }
+ 
+ .banner {
+	 background-color: black; 
+	 color: #A89A65;
+	 grid-area: banner;
+	 opacity: 0.7
+ }
+ 
+ .nav {
+     background-color: transparent; 
+     background-size: cover; 
+     background-position: center; 
+     grid-area: nav; 
+}
+
+ 
+ .main {
+  display: grid;
+  grid-template-rows: auto; 
+  grid-template-columns: auto;
+  height: 600px; 
+  background-color: transparent;
+  overflow-y: scroll;
+ }
+ 
+
+ .side {
+	 background-color: transparent;
+	 grid-area: side;
+	 color: #A89A65;
+ }
+ 
+ .footer {
+	 grid-area: footer;
+	 background-color: #80085;
+ }
+ 
+ 
+ 
+ 
+ .gloria-hallelujah-regular {
+  font-family: "Gloria Hallelujah", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+img{
+  padding: 10px;	
+  border: 2px;
+  border-style: dashed;
+  border-color: darkred;
+  margin: 10px;
+}
+
+button{
+	border-color: crimson
+	
+}
